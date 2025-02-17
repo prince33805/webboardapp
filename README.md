@@ -13,6 +13,7 @@ pnpm dev
 # or
 bun dev
 ```
+create .env from .env.production 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
