@@ -3,19 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --green500: #243831;
+  --green300: #2B5F44;
+  --green100: #D8E9E4;
+  --golden: #C5A365;
+  --black: #000000;
+  --white: #ffffff;
+  --text: #191919;
+  --gray100: #BBC2C0;
+  --gray300: #939494;
+  --success: #49A569;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  /* color: var(--foreground); */
+  background: var(--white);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.navbar {
+  @apply h-16 w-full bg-[--green500] text-white flex items-center px-4 shadow-md
+}
+
+.navbar-nav {
+  @apply h-16 w-full flex items-center justify-between p-6 bg-[--green500] text-white shadow-md
+}
+
+.sidebar {
+  @apply hidden lg:block w-64 bg-[--gray100] h-full p-4
+}
+
+
+/* .children {
+  @apply flex-1 flex w-full bg-gray-100
+  } */
+.children {
+  @apply w-full bg-white rounded-lg
+}
+
+.right-side {
+  @apply hidden lg:block w-64 bg-[--gray100]
+}
+
+.postlist {
+  @apply bg-white text-black h-full mt-6 pt-4 rounded-xl
+}
+
+/* .post {
+  @apply p-8
+} */
